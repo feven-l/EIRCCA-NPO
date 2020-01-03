@@ -1,0 +1,141 @@
+﻿
+/* HEADER NAV BAR */
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+#navbar-bg{
+  background-color: rgb(190, 196, 185, 0.0);
+  backdrop-filter: (0.6);
+}
+.navbar{
+  min-height: 60px;
+}
+.nav-text{
+  color: whitesmoke;
+}
+.dropdown dropdown-toggle:hover>.dropdown-menu {
+  display: block;
+}
+/* HOME PAGE VG */
+#videoBG{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 700px;
+  top:0;
+  margin-top: -100px;
+}
+@media (min-aspect-ratio: 16/9) {
+  #videoBG{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG{
+    width:100%;
+    height: auto;
+  }
+}
+.org-title{
+  margin-top: -35%;
+  margin-bottom: 40%;
+  padding:5px;
+  padding-top: 35px;
+  height: 120px;
+  text-align: center;
+  background-color: rgb(190, 196, 185, 0.5);
+}
+/* SECTION 2 - NEWS */
+.inline-cards{
+  transition: all .2s ease-in-out;
+  margin: 25px;
+  
+}
+.card-grow:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.card-group{
+  width: 90%;
+  margin: 0px auto;
+}
+.newsContainer{
+  margin-bottom: 150px;
+}
+
+/* SECTION 3 - CLIMATE CHANGE INFO */
+.church-img{
+  background-image: url("../Image/AdobeStock_248928318.jpeg");
+  width: 100%;
+  height: auto;
+}
+.featured-card{
+  height: 350px;
+}
+.featured-body{
+  height:200px;
+}
+.CCinAfrica{
+  width: 90%;
+  margin: 0px auto;
+}
+
+.display-4{
+  font-size: 50px;
+}
+#quote{
+  font-size:35px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  background-color: antiquewhite;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
