@@ -5,27 +5,36 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-#navbar-bg{
-  background-color: rgb(190, 196, 185, 0.0);
-  backdrop-filter: (0.6);
+.navbar-bg{
+  background-color: rgb(255, 255, 255, 0.0);
 }
-.navbar{
-  min-height: 60px;
+.navbar-bg.solid {
+  background-color: #003B46;
+  transition: 1s ease 0s;
+  color: #f1f1f1;
+  box-shadow: 0 0 20px grey;
+  padding-bottom: 25px;
+}
+.btn-link{
+  color: rgb(0, 0, 0, 0.7);
+}
+.dropdown-menu:hover{
+  background-color: rgba(254, 255, 255, 0.6);
 }
 .nav-text{
   color: whitesmoke;
 }
-.dropdown dropdown-toggle:hover>.dropdown-menu {
-  display: block;
-}
-/* HOME PAGE VG */
+/* HOME PAGE VG - Landing Page */
+/* .video-container-div{
+  width: 100%;
+  height: 780px;
+  background-image: url("../Image/landscape.jpg");
+  background-size: cover;
+
+} */
 #videoBG{
   position: relative;
   z-index: -1;
-  width: 100%;
-  height: 700px;
-  top:0;
-  margin-top: -100px;
 }
 @media (min-aspect-ratio: 16/9) {
   #videoBG{
@@ -39,20 +48,52 @@ a.navbar-brand {
     height: auto;
   }
 }
-.org-title{
-  margin-top: -35%;
-  margin-bottom: 40%;
-  padding:5px;
-  padding-top: 35px;
-  height: 120px;
+.content {
+  position: absolute;
+  /* right: 20px; */
+  top: 180px;
   text-align: center;
-  background-color: rgb(190, 196, 185, 0.5);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 40%;
+  max-height: 10%;
+  padding: 20px;
+}
+/* .calltoaction{
+  width: 50%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 350px;
+  right: 0;
+  z-index: 0;
+} */
+/* .homeContainer{
+  width: 100%;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  background-image: linear-gradient( rgba(255, 255, 255), rgb(0, 0, 0, 0.3)30%), url("../Image/lake.jpg");
+
+} */
+.title{
+  height: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding:50px;
+}
+.org-title{
+  color:black;
+  
 }
 /* SECTION 2 - NEWS */
 .inline-cards{
   transition: all .2s ease-in-out;
   margin: 25px;
-  
 }
 .card-grow:hover{
   -webkit-transform: scale(1.1);
@@ -68,11 +109,7 @@ a.navbar-brand {
 }
 
 /* SECTION 3 - CLIMATE CHANGE INFO */
-.church-img{
-  background-image: url("../Image/AdobeStock_248928318.jpeg");
-  width: 100%;
-  height: auto;
-}
+
 .featured-card{
   height: 350px;
 }
@@ -90,7 +127,76 @@ a.navbar-brand {
 #quote{
   font-size:35px;
 }
+/* CONTACT PAGE */
+.contact-us{
+  margin-left:60px;
+  margin-top: 30px;
+  width:45%;
+  display: inline-block;
 
+}
+.form-control{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(148, 143, 143);
+  border-radius: 0;
+  outline-color: 0;
+  box-shadow:none;
+}
+label{
+  opacity: 0.5;
+}
+.form-control:focus{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input{
+  border: 0;
+  outline: 0;
+  background: black;
+  border-bottom: 1px solid black;
+}
+textarea{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+.c-title{
+  position: static;
+  margin-top: 6%;
+}
+.form-length{
+  width:500px;
+}
+.info-card{
+  margin-top: -450px;
+  background: transparent;
+  margin-left: 130px;
+  backdrop-filter: blur(0.25rem);
+  box-shadow: 1px black;
+}
+.map-background{
+  width:705px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 60px;
+}
+.light-font{
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.half-img{
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.icon{
+  width:30px;
+  height: auto;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

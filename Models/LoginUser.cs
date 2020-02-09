@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace EIRCA.Models
+namespace NPO.Models
 {
     public class LoginUser
     {
