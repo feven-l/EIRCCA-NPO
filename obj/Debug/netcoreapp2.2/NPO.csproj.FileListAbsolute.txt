@@ -30,3 +30,4 @@ C:\Users\feven\OneDrive\Desktop\csharp_stack\NPO\obj\Debug\netcoreapp2.2\NPO.pdb
 C:\Users\feven\OneDrive\Desktop\csharp_stack\NPO\obj\Debug\netcoreapp2.2\NPO.csproj.CopyComplete
 C:\Users\feven\OneDrive\Desktop\csharp_stack\NPO\obj\Debug\netcoreapp2.2\Razor\Views\Home\LogIn.g.cshtml.cs
 C:\Users\feven\OneDrive\Desktop\csharp_stack\NPO\obj\Debug\netcoreapp2.2\Razor\Views\Home\ContactUs.g.cshtml.cs
+C:\Users\feven\OneDrive\Desktop\csharp_stack\NPO\obj\Debug\netcoreapp2.2\Razor\Views\Home\OurSchool.g.cshtml.cs

@@ -84,6 +84,27 @@ a.navbar-brand {
 } */
 
 /* SECTION 1 - TITLE & MISSION */
+
+.mainColor{
+  color: #343f64;
+}
+.welcomeCard1{
+  width: 40%;
+  background-color: white;
+  display: inline-block;
+  color: #343f64;
+ 
+}
+.welcomeCard2{
+  width: 40%;
+  background-color: #343f64;
+  display: inline-block;
+  color: white;
+ 
+}
+.btn{
+  color: #e9db89;
+}
 .title{
   height: 600px;
   margin-top: 100px;
@@ -252,18 +273,18 @@ html {
   position: relative;
   min-height: 100%;
 }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+nav .navbar-nav li a:hover{
+  color: #e9db89 !important;
 }
+nav .navbar-nav li a:active{
+  color: #e9db89;
+}
+/* .nav-color:hover{
+  color:  !important;
+} */
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  white-space: nowrap;
-  background-color: antiquewhite;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+  
 }
+/* Universal Several */
+ 

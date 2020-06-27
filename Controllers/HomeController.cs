@@ -30,7 +30,10 @@ namespace NPO.Controllers
         {
             return View();
         }
-        
+        public IActionResult OurSchool()
+        {
+            return View();
+        }
         [HttpPost("contact_us")]
         public IActionResult contact_us(Message fromform)
         {

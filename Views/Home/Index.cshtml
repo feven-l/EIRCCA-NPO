@@ -1,76 +1,70 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<div class="video-container-div">
-    <video id="videoBG" playsinline="playsinline" poster="../Image/Screenshot(4)"autoplay="autoplay" muted="muted" loop="loop">
-        <source src="../video/Forest - 18534.mp4" type="video/mp4">
-    </video>
-    @* <div class="content col-lg-12">
-        <button class="btn btn-outline-light btn-lg btn-block ">Get Involved</button>
-        <button class="btn btn-outline-light btn-lg btn-block ">Get Involved</button>
-    </div> *@
+<div class="imgBG">
+    <img class="img-fluid" src="../Image/boy2.jpg" alt="">
 </div>
-@* <div class="homeContainer d-block">
-    @* <div class="calltoaction">
-        <a href="#" class="btn btn-dark btn-lg">What we do</a>
-        <a href="#" class="btn btn-dark btn-lg">Donate</a>
-    </div> *@
-@* </div> *@ 
-    <div class="title">
-        <h1 id="titleEdit" class="org-title display-4 text-center pb-4">Ethiopian Institute Of Climate Change Adaptation</h1>
-        <div class="mission-statement mx-auto">
-            <img class="church-img img-fluid rounded" src="../Image/church3.jpeg" alt="Church">
-            <div class="mission-content d-inline-block align-top">
-                EIRCCA aspires to collaborate with universities in Ethiopia in training  future water experts of Ethiopia, emphasizing the role of young people in empowering communities to adapt or mitigate the negative impacts of climate change in Ethiopia. 
-            </div>
+<div class="mainContent container-fluid text-center pb-5" style="background-color: #f1f1f1;">
+    <div class="mx-auto mb-5" style= "margin-top: -150px; width: 80%;">
+        <div class="welcomeCard1 p-5 text-left" style=height:700px;>
+            <img class="img-fluid" src="../Image/books.jpg" alt="">
+            <h4 class="p-3"> Welcome to our School</h4>
+            <p class="pl-3 pr-3 mb-3">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
         </div>
-    </div>
-    <div class="newsContainer">
-        <h4 class="display-4 text-center">Catch up with the news</h4>
-        <div class="card-group p-5">
-            <div class="card card-grow inline-cards" style="width: 18rem;">
-            <img class="card-img-top" src="https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/2.5.2/bbc_news_logo.png" alt="BBC LOGO">
-            <div class="card-body">
-                <h5 class="card-title">UN talks: Climate Change</h5>
-                <p class="card-text">UN climate talks in Madrid enter their final scheduled day with divisions emerging between major emitting countries and small island states.</p>
-                <a href="http://www.bbc.com/news/science-environment-50763123" class="btn btn-primary">Read more</a>
-            </div>
-            </div> 
-            <div class="card card-grow inline-cards" style="width: 18rem;">
-            <img class="card-img-top" src="https://pmcvariety.files.wordpress.com/2013/08/t_logo_2048_black.png?w=1000&h=563&crop=1" alt="NYT LOGO">
-            <div class="card-body">
-                <h5 class="card-title">NYT: Waning Forests of Ethiopia</h5>
-                <p class="card-text">In Ethiopia, church forests are withstanding environmental destruction — but just barely.</p>
-                <a href="https://www.nytimes.com/2019/12/03/opinion/church-forests-ethiopia.html" class="btn btn-primary">Read more</a>
-            </div>
-            </div>
-            <div class="card card-grow inline-cards" style="width: 18rem;">
-            <img class="card-img-top" src="https://rojavainformationcenter.com/storage/2019/03/aljazeera.png" alt="NYT LOGO">
-            <div class="card-body">
-                <h5 class="card-title">Wonder plant to fight global warming</h5>
-                <p class="card-text">Scientists are working to determine if enset - an Ethiopian staple - could aid in the battle against climate change.</p>
-                <a href="https://www.aljazeera.com/ajimpact/steroids-potential-life-saver-warming-world-191128181518385.html" class="btn btn-primary">Read more</a>
-            </div>
-            </div>
-        </div>
-    </div>
-
-<div class="card featured-card  text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body featured-body">
-    <h5 class="card-title">"Africa will bear the brunt of global warming" -UN</h5>
-    <p class="p-5">
-        Africa is responsible for less than 4% of global greenhouse gas emission, but is the most vulnarble to the devastating counsequences of global warming.
+        <div class="align-top welcomeCard2 p-5 text-left">
+            <h3 class="pt-5 pb-5">Our Latest Events</h3>
+            <h5 class="pb-5">Summer Is Here | Summer School </h5>
+            <p class="font-weight-light" style="color: grey;">I’m an event description. To edit the event description go to My Events.</p>
+            <button class="btn btn-outline-warning mb-5">Register</button>
+            <h5 class="pb-5">Afterschool Program </h5>
+            <p class="font-weight-light" style="color: grey;">I’m an event description. To edit the event description go to My Events.</p>
+            <button class="btn btn-outline-warning mb-5">Register</button>
         
-    </p>
-    <a href="https://www.brookings.edu/wp-content/uploads/2016/08/global_20160818_cop21_africa.pdf" class="btn btn-outline-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="CCinAfrica">
-    <h2 id="quote" class="display-4 p-5">
-        "Africa is responsible for less than 4% of global greenhouse gas emission, but is the most vulnarble to the devastating counsequences of global warming."<br> - UN study finds
-    </h2>
-    <iframe class="p-5" width="560" height="415" src="https://www.youtube.com/embed/k0OFchuac-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="latest mx-auto" style="width: 80%;">
+        <h4 class="p-5 mainColor">Our Latest News</h4>
+        <div class="mx-auto newsCard d-inline-block" style="width: 45%" >
+            <div class="row row-cols-1 row-cols-md-1 mr-2">
+                <div class="col mb-4">
+                    <div class="card ">
+                        <img src="../Image/school.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-left p-5">
+                            <a href=""><h5 class="card-title mainColor">Recent school closures</h5></a>
+                            <p class="card-text mainColor border-bottom pb-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-1 mr-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="../Image/apple2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-left p-5">
+                            <h5 class="card-title mainColor">Summer school fundraiser</h5>
+                            <p class="card-text mainColor border-bottom pb-3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sideNotes d-inline-block align-top" style="width: 35%;">
+            <div class="card-body getUpdates p-5 mr-2 ml-3 mb-5 shadow-sm bg-white rounded" style="background-color: white; height: 300px;">
+                <h4 class="pb-3 mainColor">Download Our School Pamphlet</h4>
+                <p class="mainColor">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <a href="sdf" style="color: #e9db89">Download PDF</a>
+            </div>
+            <div class="card-body getUpdates p-5 mr-2 ml-3 shadow-sm rounded" style="background-color: #e9db89; height: 300px;">
+                <h4 class="pb-3 mainColor">Get Updates</h4>
+                <p class="mainColor">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <input class="form-control" style="background-color: #e9db89;" type="text" placeholder="Email">
+                <button class="btn btn-block btn-dark m-2">Subscribe</button>
+            </div>
+            <div class="getBrochure">
+
+            </div>
+        </div>
+    </div>
 </div>

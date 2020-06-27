@@ -20,53 +20,63 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top scrolling-navbar navbar-bg">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ERRICA</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="dropdown navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav nav-text flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark font-heavy " asp-area="" asp-controller="Home" asp-action="Privacy">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Climate Change</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Mission">Current News</a>
-                        </li>
-                    </ul>
-                </div>
-                    <div class="">
-                        <a class="btn btn-outline-dark" href="#">Donate</a>
-                    </div>
-                    <div class="dropdown show">
-                        <a style="text-decorations: none" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Get Involved
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Volunteer</a>
-                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
-                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="LogIn">Log in</a>
-                        </div>
-                    </div>
-                    
-                </div>
+        @* <div class="container-fluid"> *@
+            <div class="logodiv container" style="width: 11vw; height: 12vw; background-color: #f8f8f8; opacity: 0.9; position: absolute; z-index:1; margin-left:16%">
+                    <a style="text-decoration:none;" class="navbar-bran text-light ml-4" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid p-2" style="width:7vw;" src="../Image/logoschool.jpg" alt="Logo">
+                    <h6 class="pl-2 text-center mainColor" style="font-size: 1.2vw; ">WORREILU HIGH SCHOOL</h6>
+                    </a>
             </div>
-        </nav>
+            <nav class="navbar navbar-expand-sm scrolling-navbar navbar-light" style="background-color: #343f64;">
+                <div class="container pt-2 pb-2" style="margin-left: 26%" >
+                    <div class="dropdown navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav nav-text flex-grow-1">
+                            <li class="nav-item mr-4">
+                                <a class="nav-link nav-color text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="OurSchool">OUR SCHOOL</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light" asp-area="" asp-controller="Home" asp-action="Index">ACADEMICS</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light" asp-area="" asp-controller="Home" asp-action="Mission">ADMISSIONS</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="Privacy">EVENTS & NEWS</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="Privacy">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        @* </div> *@
     </header>
     <div class="">
-        <main role="main" class="pb-3">
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - NPO - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted" style= "background-color: #343f64;">
+        <div class="container p-5">
+            <div class="d-inline-block socialMedia ml-5 text-center" style="width:30%;">
+                <h6 class="text-light">Social Media</h6>
+                <p class="border-right pl-4 pr-4 font-weight-light" style="color:#f1f1f1; font-size: 13px;">&copy; 2023 By Worrilu High School <br> All rights reserved</p>
+            </div>
+            <div class="d-inline-block contactUs text-center" style="width:30%;">
+                <h6 class="text-light">Contact Us</h6>
+                <p class="border-right pl-3 pr-4 mr-4 font-weight-light" style="color:#f1f1f1; font-size: 13px;">Phone: 214-535-3346 <br> Email: Admin@WHS.edu</p>
+                <p></p>
+            </div>
+            <div class="d-inline-block Address text-center" style="width:15%;">
+                <h6 class="text-light">Address</h6>
+                <p class="font-weight-light" style="color:#f1f1f1; font-size: 13px;">500 Terry Francois Street
+                    San Francisco, CA 94158</p>
+            </div>
+            
         </div>
     </footer>
 
